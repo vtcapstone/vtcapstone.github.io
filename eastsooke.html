@@ -1,0 +1,69 @@
+<!-- Post 6-->
+<head>
+  <meta charset="utf-8">
+  <title>East Sooke Regional Park</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="dorman point">East Sooke Regional Park</a></h2>
+  <p>Completed on 12/11/2023
+
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="eastsooke/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="eastsooke/1.jpg" onclick="openFullImg(this.src)">
+    <img src="eastsooke/2.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p>Beautiful park close to Victoria on Vancouver Island with trails following the water. Great place to do whale watching. </p>
+      <p class="space"><strong>No public transit option
+</strong></p>
+    <a href="https://maps.app.goo.gl/Mr2KKYr3X5mXG9k49" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

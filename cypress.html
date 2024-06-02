@@ -1,0 +1,69 @@
+<!-- Post 4-->
+<head>
+  <meta charset="utf-8">
+  <title>Cypress/Hollyburn Mountain</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="cliff gilker">Cypress/Hollyburn Mountain</a></h2>
+  <p>Completed on 23/12/2023
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="cypress/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="cypress/1.jpg" onclick="openFullImg(this.src)">
+    <img src="cypress/2.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p><strong>17.5 km intermediate hike with 960 meters of elevation.</strong></p>
+  <p class="space">Great view at the peak of both Vancouver and the mountains.</p>
+  <p class="space">From the High View Lookout hike up Forks Trail until Hollyburn Lodge. Use the Baden Powell Trail to reach the peak of Hollyburn Mountain (1326 m).</p>
+  <p><strong>Public Transit Option</strong>: Take the 250 from Downtown Vancouver and switch to the 252 at Marine Dr at 25 St. Get off at Queens Ave. & 21st Street. Walk on the Mark Creek Trail until you reach the Cypress Lookout.
+</p>
+    <a href="https://maps.app.goo.gl/pzdGsk1Yvpo8iWQa9" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

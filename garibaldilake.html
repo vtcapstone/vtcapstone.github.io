@@ -1,0 +1,70 @@
+<!-- Post 7-->
+<head>
+  <meta charset="utf-8">
+  <title>Garibaldi Lake</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="Garibaldi Lake">Garibaldi Lake</a></h2>
+  <p>Completed on 31/12/2023
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="garibaldilake/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="garibaldilake/2.jpg" onclick="openFullImg(this.src)">
+    <img src="garibaldilake/3.jpg" onclick="openFullImg(this.src)">
+    <img src="garibaldilake/1.jpg" onclick="openFullImg(this.src)">
+
+  </div>
+
+  <p><strong>18.7 km round trip, 850 meters of elevation, intermediate hike. </strong>
+  <p class="space">Incredible hike in Garibaldi Provincial Park with a stunning view at the glacier lake. Bring microspikes if part of the trail still has snow. Start at the Rubble Creek Parking Lot. </p>
+  <p><strong>No public transit option</strong>, option to use Parkbus as a shuttle service.
+</p>
+    <a href="https://maps.app.goo.gl/H1rkJCBRp1L73X2HA" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

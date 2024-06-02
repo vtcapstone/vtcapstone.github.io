@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body{
+  font-family: 'Times New Roman', serif;
+  background:#f3f3f3;
+  font-size: 15px;
+}
+#wrapper {
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 0 0 32px 0;
+}
+header {
+  background-color: #c0bfbc;
+  height: 100px;
+}
+header h1 {
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f3f3f3;
+  line-height: 50px; 
+}
+header h2 {
+  font-family: 'Georgia', serif;
+  font-variant: small-caps;
+  text-align: center;
+  color: #f3f3f3;
+}
+.main_menu {
+  text-align:center;
+  line-height:32px;
+  background-color: #818181;
+}
+ul.main_menu {
+  margin-top: 15px;
+}
+.main_menu li {
+  display:inline;
+  padding: 0 10px 0 10px;
+  font-size: 16px;
+}
+.main_menu a {
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px
+  font-variant: small-caps;
+}
+
+.main_menu a:hover{
+  color: #62a0ea
+}
+.page {
+  background-image: -webkit-linear-gradient(75deg, #a4e597 50%, #f3f3f3 50%);  
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+  vertical-align: top;
+  height: 100%;
+}
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 8rem;
+  margin-top: 5rem;
+  text-align: left;
+}
+.page h1 {
+  margin-bottom: 5rem;
+  color: #8ad984;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.page h2 {
+  color: #777;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+.image {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+img {
+  width: 20%;
+  height: auto;
+  float: right;
+  position: relative;
+  margin-left: 1rem;
+}
+.page p {
+  font-size: 2rem;
+  color: #9a9996;
+  line-height: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 20px;
+}

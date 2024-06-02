@@ -1,0 +1,67 @@
+ <!-- Post 3-->
+<head>
+  <meta charset="utf-8">
+  <title>Kennedy Falls and Big Cedar</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="lynn">Kennedy Falls and Big Cedar Trail</a></h2>
+  <p>Completed on 28/03/2024
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="kennedy/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="kennedy/1.jpg" onclick="openFullImg(this.src)">
+    <img src="kennedy/2.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p><strong>10 km round trip, 150 meters of elevation, intermediate hike. </strong> </p>
+  <p class="space">This hike brings you to the Big Cedar Tree (~600-years old) about halfway and ends at Kennedy Falls. Be sure to follow the orange markers in order not to lose the trail. It might be more challenging to cross the creeks in spring due to more water.</p>
+  <p><strong>Public Transit Option</strong>: Either take the #210 bus from downtown Vancouver to the top of Mountain Highway or take the Seabus to North Vancouver, then the #228 bus to Lynn Valley Centre Shopping Mall and finally the #210 bus to Coleman Street.</p>
+       <a href="https://maps.app.goo.gl/EBktHyFSjiMVxZZs6" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

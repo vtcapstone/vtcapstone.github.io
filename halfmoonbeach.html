@@ -1,0 +1,69 @@
+<!-- Post 7-->
+<head>
+  <meta charset="utf-8">
+  <title>Halfmoon Beach</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="Halfmoon Beach">Halfmoon Beach Hike in Golden Ears Park</a></h2>
+  <p>Completed on 21/04/2024
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="halfmoonbeach/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="halfmoonbeach/1.jpg" onclick="openFullImg(this.src)">
+    <img src="halfmoonbeach/2.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p><strong>20 km round trip, intermediate hike with barely any elevation. </strong>
+  <p class="space">Option to camp at Halfmoon Beach  to make it a backpacking experience. Use the East Canyon Trail that makes you pass by Lower Falls and View Point Beach. Return by the West Canyon Trail back to the parking lot.</p>
+  <p><strong>No public transit option.
+</strong></p>
+     <a href="https://maps.app.goo.gl/Yf98DpW1zmKAqJda9" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

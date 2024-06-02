@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Seymour</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <!--Post 1-->
+  <div class="full-img" id="fullImgBox">
+    <img src="seymour/seymour1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <h2><a id="seymour">Seymour Mountain (First peak)</a></h2>
+  <p>Completed on 26/11/2023 and 16/01/2024</p>
+  <div class="img-gallery">
+    <img src="seymour/seymour1.jpg" onclick="openFullImg(this.src)">
+    <img src="seymour/seymour3.jpg" onclick="openFullImg(this.src)">
+    <img src="seymour/seymour2.jpg" onclick="openFullImg(this.src)">
+  </div>
+    <p><strong>7 km round trip challenging hike with 460 meters of elevation.</strong>
+    <p class="space">Beautiful way to explore Mount Seymour with very nice views at Brockton Point and First Peak. Bring microspikes in winter as it is steep with a lot of snow. Start at the end of Mount Seymour Road.</p>
+    <p><strong>No public transit option.</strong></p>
+        <a href="https://maps.app.goo.gl/57AYWtX2ca3NbNNs5" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+    
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+</html>

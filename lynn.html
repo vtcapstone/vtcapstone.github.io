@@ -1,0 +1,70 @@
+  <!-- Post 2-->
+<head>
+  <meta charset="utf-8">
+  <title>Lynn</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="lynn">Lynn Valley</a></h2>
+  <p>Completed on 02/09/2023 and 26/03/2024
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="lynn/lynn1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="lynn/lynn1.jpg" onclick="openFullImg(this.src)">
+    <img src="lynn/lynn2.jpg" onclick="openFullImg(this.src)">
+    <img src="lynn/lynn3.jpg" onclick="openFullImg(this.src)">
+    <img src="lynn/lynn4.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p><strong>Multiple easy trails in this park of North Vancouver. </strong> </p>
+  <p class="space">Must see park near Vancouver with several attractions including Twin Falls, the 30-foot pool and a suspension bridge. The famous Baden-Powell Trail goes through Lynn Valley allowing you to go explore other parts of North Vancouver. </p>
+ <p><strong> Public Transit Option</strong>: Take the #211/210 bus and switch to the #227 at NB Mountain Hwy @ Fern St. Get off at WB Peters Rd @ Duval Rd and walk 5 minutes to the Lynn Canyon Ecology Centre.
+</p>
+    <a href="https://maps.app.goo.gl/Yo4SXdBzHArywebx6" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

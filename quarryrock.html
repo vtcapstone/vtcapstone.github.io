@@ -1,0 +1,69 @@
+<!-- Post 11-->
+<head>
+  <meta charset="utf-8">
+  <title>Quarry Rock</title>
+  <!--Connect HTML file with CSS-->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+        <h1>
+            Hiking in BC
+        </h1>
+        <h2>
+            capstone website by Ève Claveau
+        </h2>
+        <nav>
+            <ul class="main_menu">
+                <li><a href="index.html">
+                    home
+                </a></li>
+                <li>
+                    <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                </li>
+                <li>
+                    <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+  </div>
+  <div class="page">
+  <div class="container">
+  <h2><a id="Quarry Rock Hike">Quarry Rock Hike</a></h2>
+  <p>Completed on 29/10/2023
+</p>
+  <div class="full-img" id="fullImgBox">
+    <img src="quarryrock/1.jpg" id='fullImg'>
+    <span onclick="closeFullImg()">X</span>
+  </div>
+
+  <div class="img-gallery">
+    <img src="quarryrock/1.jpg" onclick="openFullImg(this.src)">
+    <img src="quarryrock/2.jpg" onclick="openFullImg(this.src)">
+    <img src="quarryrock/3.jpg" onclick="openFullImg(this.src)">
+  </div>
+
+  <p><strong>4 km round trip easy hike with 100 meters of elevation.</strong> </p>
+  <p class="space">Easy hike close to the city, in Deep Cove, with a nice viewpoint. The trail is well maintained and easy to follow.</p>
+ <p><strong>Public Transit Option</strong>: Take the #211 bus (Seymour) to SB Panorama Dr @ Naughton Ave and walk 5 minutes to the trail start. 
+</p>
+      <a href="https://maps.app.goo.gl/kjZrMvAiKkLtrBwN6" id="maplink" target="_blank"><strong>See In Maps</strong></a>
+  </div>
+  </div>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
