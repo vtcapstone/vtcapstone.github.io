@@ -1,2 +1,104 @@
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <title>Project: Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onLoad="sortList()">
+    <div id="wrapper">
+        <header>
+            <h1>
+                Hiking in BC
+            </h1>
+            <h2>
+                capstone website by Ève Claveau
+            </h2>
+            <nav>
+                <ul class="main_menu">
+                    <li><a href="index.html">
+                        home
+                    </a></li>
+                    <li>
+                        <a href="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1">map</a>
+                    </li>
+                    <li>
+                        <a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/about.html">about</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div class="page">
+<div class="container">
+  <iframe src="https://www.google.com/maps/d/embed?mid=1qjYDQ9AmhJqIXiPqVkwYNVUruhWuNmw&ehbc=2E312F&noprof=1"
+    height="240" id="map"></iframe>
+  <!-- Hike list-->
+<div class="box">
+  <h2>Trails</h2>
+  <div id="trail_list">
+    <ul id="MYList">
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/seymour.html">Seymour
+          mountain</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/lynn.html">Lynn
+          Valley</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/kennedy.html">Kennedy
+          Falls and Big Cedar Trail</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/seatosky.html">Sea to
+          Summit</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/dormanpoint.html">Dorman
+          Point Trail (Bowen Island)</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/ancientcedars.html">Ancient
+          Cedars Trail (Whistler)</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/eastsooke.html">East
+          Sooke Regional Park (Vancouver Island)</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/cypress.html">Cypress/Hollyburn
+          Mountain</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/garibaldilake.html">Garibaldi
+          Lake</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/cliffgilker.html">Cliff
+          Gilker Park (Sunshine Coast)</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/lighthousepark.html">Lighthouse
+          Park</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/littlequalicum.html">Little
+          Qualicum Falls Provincial Park (Vancouver Island)</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/seatosky (copy).html">Stawamus Chief</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/quarryrock.html">Quarry
+          Rock Hike</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/pincushion.html">Pincushion
+          Mountain Hike (Kelowna)</a></li>
+      <li><a href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/belcarra.html">Belcarra
+          Bluffs</a></li>
+      <li><a
+          href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/halfmoonbeach.html">Halfmoon
+          Beach (Golden Ears Park)</a></li>
+      <li><a
+      href="https://5caf291d-aefa-4b05-8c8a-8aef0ddd797b-00-254lj0yos8rj2.worf.replit.dev/norvan.html">Norvan Falls</a></li>
+    </ul>
+  </div>
+ </div>
+</div>
+</div>
+  <script>
+    const sortList = list => [...list].sort((a, b) => {
+      const A = a.textContent, B = b.textContent;
+      return (A < B) ? -1 : (A > B) ? 1 : 0;
+    });
+    window.addEventListener("load", function () {
+      const ul = document.getElementById("MYList");
+      const list = ul.querySelectorAll("li");
+      ul.append(...sortList(list));
+    })
+  </script>
+</body>
+
+</html>
 
