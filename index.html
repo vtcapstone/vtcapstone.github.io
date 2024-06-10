@@ -4,6 +4,190 @@
   <meta charset="utf-8">
   <title>Project: Blog</title>
     <link rel="stylesheet" href="style.css">
+  <style>* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box
+}
+
+#wrapper {
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 0 0 32px 0;
+}
+header {
+  background-color: #62a0ea;
+  height: 100px;
+}
+header h1 {
+  font-family: 'Georgia', serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  line-height: 50px; 
+}
+header h2 {
+  font-family: 'Georgia', serif;
+  font-variant: small-caps;
+  text-align: center;
+  color: #fff;
+}
+.main_menu {
+  text-align:center;
+  line-height:32px;
+  background-color: #818181;
+}
+ul.main_menu {
+  margin-top: 15px;
+}
+.main_menu li {
+  display:inline;
+  padding: 0 10px 0 10px;
+  font-size: 16px;
+}
+.main_menu a {
+  font-family: 'Georgia', serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px
+  font-variant: small-caps;
+}
+
+.main_menu a:hover{
+  color: #62a0ea
+}
+h3 {
+  padding: 10px 5px;
+
+}
+h3 mark{
+  padding-right: 5px;
+  padding-left:5px;
+  font-family: 'Georgia', serif;
+  color: #ffffff;
+  background-color: #62a0ea;
+}
+.img-gallery{
+  width: 90%;
+  margin: 50px auto 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+.img-gallery img{
+  width: 100%;
+  cursor: pointer;
+}
+.img-gallery img:hover{
+  transform: scale(0.8) rotate(-15deg);
+  border-radius:20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.full-img{
+  width: 100%;
+  height:100vh;
+  background: rgba(0,0,0,.9);
+  position: fixed;
+  top:0;
+  left:0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img{
+  height: 90%;
+  max-height: 800px;
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  
+}
+#map {
+  float: right;
+  position: relative;
+  width: 50%;
+  height: 60%;
+}
+#trail_title {
+  margin-top: 10px;
+}
+
+.container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 8rem;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  text-align: left;
+  font-size: 20px;
+}
+
+#MYlist li{
+  padding: 5px;
+  font-size: 1rem;
+}
+#MYlist a{
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  color: #77767b;
+}
+#MYlist a:hover{
+  color: #62a0ea
+}
+#maplink {
+  display: block;
+  height: auto;
+  width: auto;
+  background-color: #3584e4;
+  position:relative;
+  margin:10px 0px 10px 0px;
+  margin-bottom: 20px;
+  place-items: center;
+  font-family: "Georgia", serif;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  float:right;
+}
+#maplink:hover{
+  background-color: #62a0ea;
+}
+#maplink strong{
+  padding: 5px 5px 5px 5px;
+}
+
+.body {
+  background-image: -webkit-linear-gradient(-75deg, #f3f3f3 50%, #c9c7c7 50%);  
+  font-family: 'Roboto', sans-serif;
+  background-size: cover;
+}
+.container {
+  color: #5e5c64
+}
+.container h2{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.space {
+  margin-top: 10px;
+  margin-bottom:10px;
+}</style>
 </head>
 
 <body onLoad="sortList()">
